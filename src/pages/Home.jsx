@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import RedberryLogo from "../assets/redberry-logo.svg";
 import RedberryAgency from "../assets/redberry-agency.svg";
 
@@ -12,7 +13,9 @@ export const Home = () => {
         </div>
         <div className="mid">
           <img className="mid-img" src={RedberryAgency}></img>
-          <button className="addres-btn">რეზიუმეს დამატება</button>
+          <Link to="/person-info">
+            <button className="addres-btn">რეზიუმეს დამატება</button>
+          </Link>
         </div>
       </div>
     </div>
