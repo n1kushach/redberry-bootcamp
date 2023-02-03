@@ -4,3 +4,11 @@
   box-sizing: border-box;
   font-family: "HelveticaNeue", sans-serif
 }
+
+.bg-full {
+  background: url("../src/assets/homepage-cover.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
