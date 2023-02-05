@@ -1,29 +1,19 @@
 import React from "react";
-import BackIcon from "../assets/icon-back.svg";
-import { useNavigate } from "react-router-dom";
-import { FormPersonInfo } from "../components/FormPersonInfo";
+import IconBack from "../assets/icon-back.svg";
+import { PersonInfoForm } from "../components/PersonInfoForm/PersonInfoForm";
 
-export const PersonInfo = () => {
-  const navigate = useNavigate();
-
+export const PersonInfo = ({ data, setData }) => {
   return (
-    <div className="personInfo">
+    <div className="main">
       <div className="left">
-        <div className="containerPersonInfo">
-          <div className="info-top">
-            <span onClick={() => navigate(-1)} className="icon-span">
-              <img className="icon-back" src={BackIcon}></img>
-            </span>
-            <div className="title">
-              <h1>პირადი ინფო</h1>
-              <p>1/3</p>
-            </div>
+        <div className="main-left">
+          <div className="iconBackDiv">
+            <img className="icon-back" src={IconBack}></img>
           </div>
-          <hr className="title-hr"></hr>
-          <div className="info-bottom">
-            <FormPersonInfo/>
-          </div>
+          <h1>პირადი ინფო</h1>
+          <span>1/3</span>
         </div>
+        <PersonInfoForm />
       </div>
       <div className="right"></div>
     </div>

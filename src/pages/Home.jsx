@@ -13,7 +13,7 @@ export const Home = () => {
         </div>
         <div className="mid">
           <img className="mid-img" src={RedberryAgency}></img>
-          <Link to="/person-info">
+          <Link to="/info">
             <button className="addres-btn">რეზიუმეს დამატება</button>
           </Link>
         </div>

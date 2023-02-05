@@ -64,165 +64,42 @@
   display: flex;
 }
 
-.left {
-  flex: 7;
+.main {
+  display: flex;
+  width: 100%;
   height: 100vh;
-  background: #f9f9f9;
 }
 
-.right {
-  height: 100vh;
+.left {
+  position: relative;
+  background: #f9f9f9;
   flex: 5;
 }
 
-.icon-span {
-  background: white;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
+.right {
+  flex: 4;
 }
 
-.info-top {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
 
-.info-bottom {
-  margin-top: 77px;
-}
 
-.title {
+.main-left {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
 }
 
-.containerPersonInfo {
-  max-width: 80%;
-  margin: 0 auto;
-  margin-top: 47px;
-}
-
-.title-hr {
-  margin-top: 15px;
-  border: 1px solid #1a1a1a;
-}
-
-.title h1,
-.title p {
-  flex: 1;
-}
-
-.title p {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.input-row {
+.iconBackDiv {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  position: absolute;
+  left: 20px;
 }
 
-.input-row > div {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 8px;
-}
-
-.input-row div label {
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 500;
-}
-
-.p-text {
-  font-size: 14px;
-  color: #2e2e2e;
-  font-weight: 300;
-}
-
-.input-person {
-  border: 1px solid #bcbcbc;
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.upload-photo {
-  margin-top: 54px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.upload-photo h1 {
-  font-size: 18px;
-  color: #1a1a1a;
-}
-
-.upload-photo button {
-  color: white;
-  background: #0e80bf;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 12px;
-}
-
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 54px;
-}
-
-.aboutme input {
-  height: 103px;
-}
-
-.email,
-.phone-number {
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-}
-
-.email input {
-  border: 1px solid #bcbcbc;
-  padding-left: 1rem;
-  height: 48px;
-  border-radius: 4px;
-}
-
-.phone-number input {
-  border: 1px solid #bcbcbc;
-  padding-left: 1rem;
-  height: 48px;
-  border-radius: 4px;
-}
-
-.email,
-.phone-number {
-  margin-top: 2rem;
-}
-
-.personNextBtn {
-  display: flex;
-  margin-top: 8px;
-  justify-content: right;
-}
-
-.personNextBtn button {
-  color: white;
-  cursor: pointer;
-  background: #6b40e3;
-  padding: 18px 60px;
-  border: none;
-  border-radius: 4px;
-}

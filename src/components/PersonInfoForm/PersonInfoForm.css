@@ -1,0 +1,4 @@
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+}
