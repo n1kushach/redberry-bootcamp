@@ -8,15 +8,15 @@ import { PersonEducation } from "./pages/PersonEducation";
 
 function App() {
 
-  const [data, setData] = useState([]);
+  const [mainData, setMainData] = useState([]);
 
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/info" element={<PersonInfo data={data} setData={setData}/>}/>
-          <Route path="/experience" element={<PersonExperience data={data} setData={setData}/>}/>
+          <Route path="/info" element={<PersonInfo mainData={mainData} setMainData={setMainData}/>}/>
+          <Route path="/experience" element={<PersonExperience mainData={mainData} setMainData={setMainData}/>}/>
           <Route path="/education" element={<PersonEducation/>}/>
         </Routes>
       </Router>

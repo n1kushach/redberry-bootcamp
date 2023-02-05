@@ -74,13 +74,19 @@
   position: relative;
   background: #f9f9f9;
   flex: 5;
+  padding-top: 54px;
 }
 
 .right {
   flex: 4;
 }
 
-
+.greentick {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 435px;
+}
 
 .main-left {
   width: 80%;
@@ -89,6 +95,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
 .iconBackDiv {
@@ -103,3 +110,20 @@
   left: 20px;
 }
 
+.experienceNavigationDiv {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.experienceFormItem button {
+  width: 151px;
+  height: 48px;
+  border: none;
+  background: #6B40E3;
+  border-radius: 4px;
+  color: white;
+}

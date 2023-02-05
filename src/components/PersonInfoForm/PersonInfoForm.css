@@ -1,4 +1,81 @@
 .infoDiv {
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorBorder {
+  border: 1px solid #ef5050;
+}
+
+.greenBorder {
+  border: 1px solid #98e37e;
+}
+
+.infoForm {
+  width: 80%;
+  margin: 54px auto;
+  display: grid;
+  grid-column-gap: 3.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 7.400000000000006rem);
+}
+
+.infoFormItem input {
+  height: 48px;
+  width: 100%;
+}
+
+.infoFormItem:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+.infoFormItem:nth-child(4) {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+}
+.infoFormItem:nth-child(4) input {
+  height: 103px;
+}
+
+.infoFormItem:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+.infoFormItem:nth-child(6) {
+  grid-column: 1 / span 2;
+}
+.infoFormItem:nth-child(7) {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.infoDivRow {
+  display: flex;
+  align-items: center;
+}
+
+.infoFormItem input[type="submit"] {
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #6B40E3;
+  width: 151px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 14px;
+  font-weight: 300;
+  color: #2E2E2E;
 }

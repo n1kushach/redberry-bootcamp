@@ -1,0 +1,49 @@
+.resumeImage {
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+}
+
+.resumeContactRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resumeDivTopLeft {
+  max-width: 432px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resumeDivTopLeft h1 {
+  color: #F93B1D;
+  font-size: 34px;
+}
+
+.resumeContactRow span {
+  font-size: 18px;
+  color: #1A1A1A;
+}
+
+.resumeDivTop {
+  display: flex;
+  align-items: center;
+}
+
+.resumeDiv {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.resumeAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resumeAbout p {
+  max-width: 432px;
+  word-break: break-word;
+}
