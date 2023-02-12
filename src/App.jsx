@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename="/redberry-bootcamp">
         <Routes>
           <Route path="/" element={<Home mainData={mainData} setMainData={setMainData} />} />
           <Route path="/info" element={<Info img={img} setImg={setImg} apiData={apiData} mainData={mainData} setMainData={setMainData} />} />
