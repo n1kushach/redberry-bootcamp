@@ -1,49 +1,59 @@
-.resumeImage {
-  width: 246px;
-  height: 246px;
+.resumeImg {
+  height: 240px;
+  width: 240px;
   border-radius: 50%;
 }
 
-.resumeContactRow {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.resumeContainer {
+  margin: 0 auto;
+  width: 80%;
 }
 
-.resumeDivTopLeft {
-  max-width: 432px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.paragraph {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
 }
 
-.resumeDivTopLeft h1 {
-  color: #F93B1D;
+.date {
+  color: #909090;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.experience {
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nameSurname {
+  color: #f93b1d;
+  font-weight: 700;
+  white-space: nowrap;
   font-size: 34px;
 }
 
-.resumeContactRow span {
+.contentTitle {
+  color: #f93b1d;
   font-size: 18px;
-  color: #1A1A1A;
+  font-weight: 700;
 }
 
-.resumeDivTop {
+.resumeTop {
   display: flex;
   align-items: center;
 }
 
-.resumeDiv {
-  width: 80%;
-  margin: 0 auto;
+.contact {
+  font-size: 18px;
+  color: #1A1A1A;
+  font-weight: 400;
 }
 
-.resumeAbout {
+.topRow {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.resumeAbout p {
-  max-width: 432px;
-  word-break: break-word;
+  align-items: center;
+  gap: 0.3rem;
 }

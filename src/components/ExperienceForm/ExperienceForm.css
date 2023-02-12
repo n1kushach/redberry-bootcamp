@@ -1,0 +1,37 @@
+.experienceGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-column-gap: 56px;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 7rem);
+}
+
+.experienceGridItem:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.experienceGridItem:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+.experienceGridItem:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.experienceGridItem:nth-child(6) {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / span 2;
+}
+
+.experienceGridItem:nth-child(7) {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experienceTick {
+  position: absolute;
+  bottom: 15px;
+  left: 585px;
+}

@@ -1,39 +1,49 @@
 import React from "react";
-import "./Resume.css";
 import EmailIcon from "../../assets/email.svg";
 import PhoneIcon from "../../assets/phone.svg";
+import "./Resume.css";
 
-export const Resume = (props) => {
+export const Resume = ({ infoValues, experience }) => {
+  console.log(infoValues?.image);
+
   return (
-    <div className="resumeDiv">
-      <div className="resumeDivTop">
-        <div className="resumeDivTopLeft">
-          <h1>
-            {props.data?.name} {props.data?.surname}
-          </h1>
-          <div className="resumeDivTopLeftContact">
-            <div className="resumeContactRow">
-              {props.data?.email && (
-                <img className="resumeEmailIcon" src={EmailIcon}></img>
-              )}
-              <span>{props.data?.email}</span>
+    <div className="main">
+      <div className="resumeContainer">
+        <div className="resumeTop">
+          <div className="resumeTopLeft">
+            <h1 className="nameSurname">ნიკუშა ჭავჭავაძე</h1>
+            <div className="topRow">
+              <img src={EmailIcon}></img>
+              <h1 className="contact">niikusha420@redberry.ge</h1>
             </div>
-            <div className="resumeContactRow">
-              {props.data?.phone_number && (
-                <img className="resumePhoneIcon" src={PhoneIcon}></img>
-              )}
-              <span>{props.data?.phone_number}</span>
+            <div className="topRow">
+              <img src={PhoneIcon}></img>
+              <h1 className="contact">+995 555 506 505</h1>
             </div>
+              <h1 className="contentTitle">ჩემს შესახებ</h1>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
+              quis, sint molestias quasi officiis ipsam esse harum eos ex,
+              possimus aspernatur porro! Necessitatibus deserunt nihil
+              voluptatibus quas perspiciatis accusantium.
+            </p>
           </div>
-          <div className="resumeAbout">
-            {props.data?.about_me && <h1>ჩემს შესახებ</h1>}
-            <p>{props.data?.about_me}</p>
+          <div className="resumeTopRight">
+              <img
+                className="resumeImg"
+                src="https://www.w3schools.com/w3images/avatar6.png"
+              />
           </div>
         </div>
-        <div className="resumeDivTopRight">
-          {props.data?.image && (
-            <img className="resumeImage" src={props?.data.image}></img>
-          )}
+        <div className="resumeExperience">
+          <h1 className="contentTitle">ჩემს შესახებ</h1>
+          <h1 className="experience">
+            React Developer, Majorel Georgia
+          </h1>
+          <h1 className="date">
+            2021/07/27 - 2021/08/27
+          </h1>
+          <h1 className="experienceDescription">{experience?.description}</h1>
         </div>
       </div>
     </div>
