@@ -37,6 +37,8 @@ export const InfoForm = ({
   setMainData,
   infoValues,
   setInfoValues,
+  img,
+  setImg,
   apiData,
 }) => {
   const {
@@ -79,6 +81,7 @@ export const InfoForm = ({
   const onSubmit = async (data) => {
     const phone = data.phone_number.replace(/\s/g, "");
     const imageBase64 = await getBase64FromUrl(infoValues.image);
+    setImg(imageBase64);
     const infoData = {
       name: data.name,
       surname: data.surname,

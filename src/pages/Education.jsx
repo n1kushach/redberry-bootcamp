@@ -15,7 +15,7 @@ const schema = yup.object().shape({
   description: yup.string().required(),
 });
 
-export const Education = ({ apiData, mainData, setMainData }) => {
+export const Education = ({ apiData, mainData, setMainData, img, setImg }) => {
   const [count, setCount] = useState(0);
   const [educationValues, setEducationValues] = useState({
     institute: "",

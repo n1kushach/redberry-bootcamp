@@ -7,9 +7,8 @@ import { Experience } from "./pages/Experience";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [mainData, setMainData] = useState(
-
-  );
+  const [mainData, setMainData] = useState();
+  const [img, setImg] = useState();
   const apiData = new FormData()
   
     useEffect(() => {
@@ -21,9 +20,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home mainData={mainData} setMainData={setMainData} />} />
-          <Route path="/info" element={<Info apiData={apiData} mainData={mainData} setMainData={setMainData} />} />
-          <Route path="/experience" element={<Experience apiData={apiData}  mainData={mainData} setMainData={setMainData}/>}/>
-          <Route path="/education" element={<Education apiData={apiData}  mainData={mainData} setMainData={setMainData}/>}/>
+          <Route path="/info" element={<Info img={img} setImg={setImg} apiData={apiData} mainData={mainData} setMainData={setMainData} />} />
+          <Route path="/experience" element={<Experience img={img} setImg={setImg}  apiData={apiData}  mainData={mainData} setMainData={setMainData}/>}/>
+          <Route path="/education" element={<Education img={img} setImg={setImg}  apiData={apiData}  mainData={mainData} setMainData={setMainData}/>}/>
         </Routes>
       </Router>
     </div>

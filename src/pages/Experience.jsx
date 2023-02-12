@@ -14,7 +14,7 @@ const schema = yup.object().shape({
   description: yup.string().required(),
 });
 
-export const Experience = ({apiData,  mainData, setMainData }) => {
+export const Experience = ({apiData,  mainData, setMainData, img, setImg }) => {
   const [experienceValues, setExperienceValues] = useState({
     position: "",
     employer: "",
