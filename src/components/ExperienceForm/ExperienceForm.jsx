@@ -5,6 +5,8 @@ import GreenTick from "../../assets/GreenTick.svg";
 export const ExperienceForm = ({
   mainData,
   setMainData,
+  img,
+  setImg,
   experienceValues,
   setExperienceValues,
   register,

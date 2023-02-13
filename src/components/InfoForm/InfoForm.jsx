@@ -81,7 +81,7 @@ export const InfoForm = ({
   const onSubmit = async (data) => {
     const phone = data.phone_number.replace(/\s/g, "");
     const imageBase64 = await getBase64FromUrl(infoValues.image);
-    setImg(imageBase64);
+    setImg(infoValues.image);
     const infoData = {
       name: data.name,
       surname: data.surname,
@@ -96,7 +96,7 @@ export const InfoForm = ({
       image: dataURLtoFile(imageBase64, "image.png"),
       about_me: data.about_me,
       email: data.email,
-      phone_number: phone
+      phone_number: phone,
     });
     navigate("/experience");
   };

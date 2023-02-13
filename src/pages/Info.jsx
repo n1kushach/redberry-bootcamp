@@ -12,7 +12,6 @@ export const Info = ({ formData, mainData, setMainData, img, setImg}) => {
     phone_number: "",
   });
 
-  // console.log(infoValues)
 
   return (
     <div className="main">
@@ -26,7 +25,7 @@ export const Info = ({ formData, mainData, setMainData, img, setImg}) => {
         </div>
       </div>
       <div className="right">
-        <Resume img={img} infoValues={infoValues}/>
+        <Resume setImg={setImg} img={img} infoValues={infoValues}/>
       </div>
     </div>
   );

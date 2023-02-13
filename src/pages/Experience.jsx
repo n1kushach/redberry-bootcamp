@@ -78,6 +78,8 @@ export const Experience = ({apiData,  mainData, setMainData, img, setImg }) => {
           {[...Array(count)].map((item, index) => {
             return (
               <ExperienceForm
+                img={img}
+                setImg={setImg}
                 key={index}
                 onSubmit={onSubmit}
                 register={register}
@@ -113,7 +115,7 @@ export const Experience = ({apiData,  mainData, setMainData, img, setImg }) => {
           </form>
         </div>
       </div>
-      <div className="right"><Resume experience={experienceValues} infoValues={mainData}/></div>
+      <div className="right"><Resume img={img} setImg={setImg} experience={experienceValues} infoValues={mainData}/></div>
     </div>
   );
 };

@@ -23,6 +23,8 @@ export const Education = ({ apiData, mainData, setMainData, img, setImg }) => {
     due_date: "",
     description: "",
   });
+  const [degrees, setDegrees] = useState([])
+
 
   const {
     register,
@@ -92,6 +94,8 @@ export const Education = ({ apiData, mainData, setMainData, img, setImg }) => {
           </div>
           {/* FIRST EDUCATION FORM HERE */}
           <EducationForm
+            degrees={degrees}
+            setDegrees={setDegrees}
             onSubmit={onSubmit}
             register={register}
             handleSubmit={handleSubmit}
@@ -116,7 +120,7 @@ export const Education = ({ apiData, mainData, setMainData, img, setImg }) => {
           </form>
         </div>
       </div>
-      <div className="right">{/* <Resume infoValues={mainData}/> */}</div>
+      <div className="right"><Resume degrees={degrees} img={img} experience={mainData?.experiences[0]} educations={educationValues} infoValues={mainData}/></div>
     </div>
   );
 };

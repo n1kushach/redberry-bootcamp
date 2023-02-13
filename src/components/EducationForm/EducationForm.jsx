@@ -14,14 +14,14 @@ export const EducationForm = ({
   setMainData,
   educationValues,
   setEducationValues,
+  degrees,
+  setDegrees
 }) => {
 
-  const [degrees, setDegrees] = useState([])
 
   useEffect(() => {
     Axios.get("https://resume.redberryinternship.ge/api/degrees")
     .then((res) => {
-      console.log(res.data)
       setDegrees(res.data)
     })
   }, [])
