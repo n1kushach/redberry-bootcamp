@@ -4,11 +4,15 @@ import PhoneIcon from "../../assets/phone.svg";
 import { useEffect } from "react";
 import "./Resume.css";
 
-export const Resume = ({ infoValues, img, experience, experiences,  mainData, educations, degrees }) => {
-
-
-
-
+export const Resume = ({
+  infoValues,
+  img,
+  experience,
+  experiences,
+  mainData,
+  educations,
+  degrees,
+}) => {
   return (
     <div className="main">
       <div className="resumeContainer">
@@ -42,7 +46,7 @@ export const Resume = ({ infoValues, img, experience, experiences,  mainData, ed
           {experience?.position && (
             <h1 className="contentTitle">ჩემს შესახებ</h1>
           )}
-          
+
           {experience?.position && (
             <h1 className="experience">
               {experience?.position}, {experience?.employer}
@@ -56,19 +60,18 @@ export const Resume = ({ infoValues, img, experience, experiences,  mainData, ed
           <h1 className="paragraph">{experience?.description}</h1>
         </div>
         <div className="resumeExperience">
-          {educations?.institute && (
-            <h1 className="contentTitle">{educations?.institute}</h1>
-          )}
-          
-          {educations?.degree_id && (
-            <h1 className="experience">
-              {degrees[educations?.degree_id]["title"]}
-            </h1>
-          )}
+          {educations?.institute && <h1 className="contentTitle">განათლება</h1>}
+          <div className="educationRow">
+            {educations?.institute && (
+              <h1 className="experience">{educations?.institute}</h1>
+            )}
+            {educations?.degree_id && (
+              <h1 className="experience">{degrees[educations?.degree_id - 1]["title"]}</h1>
+            )}
+          </div>
+          {educations?.degree_id && <h1 className="experience"></h1>}
           {educations?.due_date && (
-            <h1 className="date">
-              {educations?.due_date}
-            </h1>
+            <h1 className="date">{educations?.due_date}</h1>
           )}
           <h1 className="paragraph">{educations?.description}</h1>
         </div>
